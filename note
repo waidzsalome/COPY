@@ -1,0 +1,55 @@
+1.从github上下载一个文件：
+git clone 复制粘贴
+2.打开一个文件
+npm i,有报错不用管
+3.可能会用到的命令
+缺少一个模块时增加它（未成功）
+npm install XXX --save-dev
+4.新建一个文件
+在对应文件夹下使用
+dva new xxx
+根据其他的文件判断哪个文件夹放什么文件
+5.使用antd
+输入命令 npm install antd && antd babel-plugin-import --save
+输入命令 npm install antd babel-plugin-import --save
+（不确定是否每次都需要装）
+6.修改.webpackrc,使 babel-plugin-import 插件生效。
+{
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ]
+}
+7.在A文件中定义输出接口export，在B文件中引入import，把引入的组件用起来，这样就可以复用组件A去配合文件B生成html页面
+8.export default
+9.dispatch,count
+10.ReactDOM.render 是react的最基本的方法，用于将模板转为HTML语言，并插入指定的DOM节点。
+import ReactDOM from 'react-dom' ;
+11.mountNode
+12.index.js文件夹的作用
+13.class xxx extends xxx
+这种方法使用es6的语法，通过class定义构造函数，还有其他的。
+ 14.路由跳转
+15.路由和菜单
+16.dva model
+17.上传时使用到的命令
+git add .
+git commit -m"fixbug"
+git pull origin master
+git push 
+git pull wp master
+git stash
+git stash pop
+
+18.路由异步处理和自动生成路由
+19.上传到仓库
+git init
+
+git add README.md
+
+git commit -m "first commit"
+
+git remote add origin https://github.com.xxx.git
+
+git push -u origin master
+
+20.部署到服务器
